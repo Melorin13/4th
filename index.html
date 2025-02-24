@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Content Scheduler</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "DM Sans", serif;
+            background-color: #f6f5fc;
+        }
+
+        .content-scheduler {
+            background-color: #f9eee2;
+            width: 13%;
+            height: 39%;
+            top: 6%;
+            left: 17%;
+            padding: 10px;
+            border-radius: 5%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            position: absolute;
+
+        }
+        .img1{
+        	width: 70%;
+        	height: auto;
+        	position: absolute;
+        	margin-top: 35px;
+        	margin-left: 10px;
+        }
+
+        .create-post-button {
+            background-color: #ffcd67;
+            border: none;
+            display: block;
+            padding: 10px;
+            cursor: pointer;
+            margin: auto;
+            border-radius: 50px;
+            font-size: 12px;
+            color: #8064be;
+            height: 15%;
+            width: 83%;
+            margin-top: 140px;
+        }
+        .Al {
+        	background-color: #ffcd6a;
+            width: 14%;
+            height: 42%;
+            border-radius: 7px;
+            border-style: bold;
+            margin-left: 17%;
+            margin-top: 31%;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            position: absolute;
+
+        }
+        .image11{
+        	width: 70%;
+        	display: block;
+        	height: auto;
+        	margin-top: 15px;
+        }
+        .image10{
+        	width: 90%;
+        	height: auto;
+        	margin-left: 6px;
+        	margin-top: 25px;
+        }
+        .social{
+        	width: 34%;
+        	height: 32%;
+        	background-color: hsl(256, 67%, 59%);
+        	position: absolute;
+        	top: 6%;
+        	left: 34%;
+        	border-radius: 7px;
+        	font-size: 10px;
+        	color: white;
+        	text-align: center;
+
+
+        }
+        .social-image1 {
+            width: 72%;
+            height: auto;
+            max-width: 90%;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .social-image2{
+            width: 32%;
+            height: auto;
+            max-width: 90%;
+            display: block;
+            margin: auto;
+            margin-top: 12px;	
+        }
+
+        .manage{
+        	width: 15%;
+        	height: 23%;
+        	background-color: white;
+        	top: 42%;
+        	left: 34%;
+        	border-radius: 10px;
+        	position: absolute;
+        	padding: 5px;
+        }
+        .manage-image1{
+        	width: 96%;
+        	height: auto;
+        	display: block;
+        	margin-top: 5px;
+        	margin-left: 12px;
+        }
+        .manage-image2{
+        	width: 80%;
+        	height: auto;
+        	display: block;
+        	margin-left: 8px;
+        }
+        .a56{
+        	width: 16%;
+        	height: 23%;
+        	background-color: white;
+        	top: 70%;
+        	left: 34%;
+        	border-radius: 5px;
+        	position: absolute;
+        	font-size: 30px;
+        }
+        .a1{
+        	top: 75%;
+        	left: 34%;
+        	width: 80%;
+        	height: auto;
+        	display: block;
+        }
+        .a2{
+        	top: 80%;
+        	left: 34%;
+        	width: 68%;
+        	height: auto;
+        	display: block;
+        	margin-left: 15px;
+        }
+        .posting{
+            width: 16%;
+        	height: 25%;
+        	background-color: #ffcd6a;
+        	top: 42%;
+        	left: 52%;
+        	position: absolute;
+        	border-radius: 7px;
+        	
+        }
+        .text1{
+        	top: 45%;
+        	left: 53%;
+        	width: 59%;
+        	height: auto;
+        	margin-top: 10px;
+        	margin-left: 10px;
+        	position: block;
+        }
+        .image5{
+        	top: 52%;
+        	left: 53%;
+        	width: 82%;
+        	height: auto;
+        	margin-left: 15px;
+        	margin-top: 3px;
+        	border-top-left-radius: 5px;
+        	border-top-right-radius: 5px;
+        	position: block;
+        }
+        .media{
+        	left: 70%;
+        	top: 6%;
+        	width: 16%;
+        	height: 62%;
+        	border-radius: 7px;
+        	background-color: hsl(254, 88%, 90%);
+        	position: absolute;
+        	font-size: 10px;
+        	text-align: left;
+
+        }
+        .image6{
+        	width: 70%;
+        	height: auto;
+        	display: block;
+        	margin-top: 22px;
+        	margin-left: 10px;
+        }
+        .image7{
+        	width: 88%;
+        	height: auto;
+        	display: block;
+        	float: right;
+        	border-top-left-radius: 12px;
+        	border-bottom-left-radius: 12px;
+        	margin-bottom: 20px;
+        	margin-top: 10px;
+        }
+        .image12{
+        	display: block;
+        	width: 70%;
+        	height: auto;
+        	margin-left: 20px;
+        }
+
+        .last{
+        	height: 24%;
+        	width: 34%;
+        	top: 71%;
+        	left: 52%;
+        	background-color: hsl(256, 67%, 59%); 
+        	position: absolute;
+        	border-radius: 7px;
+        	overflow: hidden;
+        }
+        .image8{
+        	display: block;
+        	width: 38%;
+        	height: auto;
+        	margin-left: 15px;
+        	margin-top: 15px;
+        }
+        .image9{
+        	width: 47%;
+        	height: auto;
+        	object-fit: cover;
+        	margin: auto;
+        	float: right;
+        	margin-top: 40px;
+        	margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+      <div class="content-scheduler"><img src="images\6.jpg" class="img1">
+        <button class="create-post-button"><strong>Create Post +</strong></button>
+      </div>
+      <div class="Al"><img src="images\9.jpg" class="image11"><img src="images\illustration-ai-content.webp" class="image10"></div>
+      <div class="social"><img src="images\1.jpg" class="social-image1" /><img src="images\illustration-five-stars.webp" class="social-image2"><p> Over 4,000 5-star reviews </p></div>
+      <div class="manage"><img src="images\3.jpg" class="manage-image1"><img src="images\2.jpg" class="manage-image2"></div>
+      <div class="a56"><img src="images\4.jpg" class="a1"><img src="images\illustration-audience-growth.webp" class="a2"></div>
+      <div class="posting"><img src="images\5.jpg" class="text1"><img src="images\illustration-consistent-schedule.webp" class="image5"></div>
+      <div class="media"><img src="images\7.jpg" class="image6"><img src="images\v.webp" class="image7"><img src="images\10.jpg" class="image12"></div>
+      <div class="last"><img src="images\8.jpg" class="image9"><img src="images\illustration-grow-followers.webp" class="image8"></div>
+</body>
+</html>
